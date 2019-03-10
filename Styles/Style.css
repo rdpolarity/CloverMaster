@@ -3,12 +3,6 @@
     height: 100px;
 }
 
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
-html,
-body {
-  height: 100%
-}
-
 @font-face {
   font-family: Roboto-Light;
   src: url(Fonts/Roboto/Roboto-Light.ttf);
