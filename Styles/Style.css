@@ -24,7 +24,7 @@
 }
 
 body {
-  background: red;
+  background: rgb(39, 39, 39);
 }
 
 .grid {
@@ -56,10 +56,6 @@ body {
   margin: 10px;
 }
 
-.grid div:nth-child(even) {
-  background-color: grey;
-}
-
-.grid div:nth-child(odd) {
+.grid > div {
   background-color: white;
 }
