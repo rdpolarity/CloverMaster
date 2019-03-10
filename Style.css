@@ -1,0 +1,54 @@
+#loading {
+    width: 100px;
+    height: 100px;
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+html,
+body {
+  height: 100%
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(Fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(Fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+.LogoTitle {
+  font-size: 20px;
+  font-family: Roboto-bold;
+}
+
+.LogoTitle {
+  color: purple;
+}
+
+.NavBar {
+  display: grid;
+  grid-template-columns: 50% 100px 100px;
+  grid-gap: 5px;
+}
+
+/* Grid Settings */
+.wrapper {
+  display: grid;
+  grid-template-columns: 50px 200px;
+  grid-gap: 5px;
+}
+.wrapper > div:nth-child(odd) {
+  background: #dddddd;
+}
+.wrapper > *{
+  background: #eeeeee;
+  padding: 10px;
+}
