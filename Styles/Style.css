@@ -5,10 +5,13 @@
 }
 
 body {
-  background:white;
+  background:rgb(236, 236, 236);
 }
 
-
+nav.navheight {
+  height: 45px;
+  line-height: 45px;
+}
 
 .header {
   grid-area: header;
@@ -21,15 +24,17 @@ body {
   margin: 10px;
 }
 
+.LogoTitle > img {
+  margin-top: 5px;
+}
+
 .container > .panel {
   height: 400px;
 }
 
-.logo {
-  height: 60px;
-  width: 60px;
-  float: left;
-  padding: 10px;
+.LargeItems > ul{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif, bold700;
 }
 
 .hide-on-med-and-down > li > a {
@@ -37,9 +42,26 @@ body {
   font-family: 'Roboto', sans-serif, bold700;
 }
 
+.navbar-material .nav-wrapper .brand-logo img {
+  height: 64px;
+}
+
 .hide-on-med-and-down > li {
   color: rgb(90, 90, 214);
   font-family: 'Roboto', sans-serif, bold700;
+}
+
+.container > .first {
+  margin-top: 300px;
+  position: relative;
+}
+
+.DeskImage {
+  width: 500px;
+  margin-left: 100px;
+
+  position: absolute;
+  margin-top:-400px;
 }
 
 .LogoTitle {
