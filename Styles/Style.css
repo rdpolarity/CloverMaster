@@ -30,13 +30,41 @@ body {
   font-family: 'Roboto', sans-serif, bold700;
 }
 
+.footer {
+  position: fixed;
+  bottom: 5px;
+  margin: 5px;
+}
+
+.Logo {
+  position: relative;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+}
+
 .hide-on-med-and-down > li > a {
-  color: rgb(90, 90, 214);
   font-family: 'Roboto', sans-serif, bold700;
+}
+
+.OSList > li {
+  display: inline;
+  margin: 10px;
+}
+
+.OSList > li > img {
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 10px;
+  right: 5px;
 }
 
 .hide-on-med-and-down > li {
   color: rgb(90, 90, 214);
+  font-family: 'Roboto', sans-serif, bold700;
+}
+
+.card-title {
   font-family: 'Roboto', sans-serif, bold700;
 }
 
@@ -66,8 +94,7 @@ body {
 }
 
 
-.LogoTitle {
-  color: purple;
+.LargeText {
   font-size: 20px;
   font-family: 'Roboto', sans-serif, bold700;
 }
