@@ -11,6 +11,7 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="Scripts/loading.js"></script>
 </head>
 
 <body>
@@ -36,7 +37,8 @@
 
   <div class="parallelogram purple lighten-4"></div>
   <div style="margin-top: 1000px; transform: skew(0deg,4deg)" class="parallelogram purple lighten-3"></div>
-  <div style="margin-top: 1200px; height: 300px; transform: skew(0deg,-4deg)" class="parallelogram purple lighten-2"></div>
+  <div style="margin-top: 1200px; height: 300px; transform: skew(0deg,-4deg)" class="parallelogram purple lighten-2">
+  </div>
   <div style="margin-top: 1400px; height: 150px; transform: skew(0deg,0deg)" class="parallelogram purple lighten-2">
     <p class="white-text align-bottom footer">©2018-2019 Clover and AydieMe</p>
   </div>
@@ -94,28 +96,33 @@
         <span class="card-title grey-text">Features</span>
       </div>
       <div class="card-action grey lighten-4">
-          <ul>
-            <li>Yas very kool</li>
-            <li>Also quite cool</li>
-            <li>Wowie yknow</li>
-            <li>Yoinkers :O</li>
-          </ul>
+        <ul>
+          <li>Yas very kool</li>
+          <li>Also quite cool</li>
+          <li>Wowie yknow</li>
+          <li>Yoinkers :O</li>
+        </ul>
       </div>
     </div>
 
     <div class="card panel white">
-        <div class="card-content">
-          <span class="card-title grey-text">Share & Connect</span>
-          <p>OooEEeooE connwect</p>
-        </div>
-      </div> 
+      <div class="card-content">
+        <span class="card-title grey-text">Share & Connect</span>
+        <p>OooEEeooE connwect</p>
+      </div>
+    </div>
   </div>
 
-  
-
+  <div class="preloader-background">
+      <div class="preloader-wrapper">
+          <div id="loading"></div>
+      </div>
+      <p>Loading...</p>
+  </div>
   <!-- Scripts -->
   <script src="Scripts/bodymovin.js"></script>
   <script src="Scripts/index.js"></script>
+
 </body>
 
 </html>
