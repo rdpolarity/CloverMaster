@@ -4,19 +4,45 @@
 <head>
   <meta charset="UTF-8" />
   <title>Clover</title>
-  <link rel="stylesheet" href="Styles/Style.css">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <!-- SCRIPTS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="Scripts/loading.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js'></script>
+  <!-- STYLES -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 </head>
 
 <body>
+
+  <div id="login" class="modal">
+    <div class="modal-content">
+
+      <h4>Login</h4>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close left waves-effect waves-green btn-flat">Cancel</a>
+      <a href="#!" class="modal-close right waves-effect waves-green btn-flat">Login</a>
+    </div>
+  </div>
 
   <div class="preloader-background">
     <div class="preloader-wrapper big">
@@ -36,8 +62,8 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a class="waves-effect waves-purple purple-text btn-flat" href="">SIGN-UP</a></li>
           <li>|</li>
-          <li><a class="waves-effect waves-purple purple-text btn-flat" href="">LOGIN</a></li>
-          <li><a class="waves-effect waves-purple purple-text btn-flat purple white-text" href="http://panel.clover.aydie.me/">OPEN APP</a></li>
+          <li><a class="waves-effect waves-purple purple-text btn-flat modal-trigger" href="#login">LOGIN</a></li>
+          <li><a class="waves-effect waves-purple purple-text btn-flat purple white-text disabled" href="http://panel.clover.aydie.me/">OPEN APP</a></li>
         </ul>
       </div>
     </nav>
@@ -50,8 +76,6 @@
   <div style="margin-top: 1400px; height: 200px; transform: skew(0deg,0deg)" class="parallelogram purple lighten-2">
     <p class="white-text align-bottom footer">©2018-2019 Clover and AydieMe</p>
   </div>
-
-  <!-- <img src="vectors/DeskFile.svg" class="DeskImage"> -->
 
   <div class="container">
 
@@ -74,7 +98,7 @@
         <p>Forget messy notepads and keep on track with your commissions on the go with <strong
             class="purple-text">Clover</strong></p>
         <br>
-        <a class="waves-effect waves-light purple btn">BETA SIGNUP</a>
+        <a class="waves-effect waves-light purple btn disabled">BETA SIGNUP</a>
       </div>
       <div class="card-action grey lighten-4">
         <p>Available on:</p>
@@ -122,9 +146,11 @@
   </div>
 
   <!-- Scripts -->
-  <script src="Scripts/bodymovin.js"></script>
-  <script src="Scripts/index.js"></script>
-  <script src="Scripts/loading.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/bodymovin.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>
