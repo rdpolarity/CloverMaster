@@ -2,8 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <!-- META -->
   <title>Clover</title>
+  <meta charset="UTF-8"/>
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="538562272887-p20e0rkf702pra0du5viilch9fs4r89a.apps.googleusercontent.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- SCRIPTS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
@@ -12,10 +16,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" href="css/main.css">
-  <!-- META -->
-  <meta name="google-signin-scope" content="profile email">
-  <meta name="google-signin-client_id" content="538562272887-p20e0rkf702pra0du5viilch9fs4r89a.apps.googleusercontent.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 </head>
@@ -31,8 +31,8 @@
 
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close left waves-effect waves-green btn-flat">Cancel</a>
-      <a href="#!" class="modal-close right waves-effect waves-green btn-flat">Login</a>
+      <a class="modal-close left waves-effect waves-green btn-flat">Cancel</a>
+      <a class="modal-close right waves-effect waves-green btn-flat">Login</a>
     </div>
   </div>
 
@@ -52,8 +52,9 @@
         </a>
         <i style="font-size: 10px; display:inline;" class="grey-text">BETA</i>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a class="waves-effect waves-purple purple-text btn-flat" href="">SIGN-UP</a></li>
-          <li>|</li>
+          <li style="display: none;"><a class="waves-effect waves-purple purple-text btn-flat" href="">SIGN-UP</a></li>
+          <li><a id="sign-out" style="display: none;" class="purple-text waves-effect waves-purple purple-text btn-flat" onclick="signOut();">SIGN OUT</a></li>
+          <li>|</li>  
           <li><a class="waves-effect waves-purple purple-text btn-flat modal-trigger" href="#login">LOGIN</a></li>
           <li><a class="waves-effect waves-purple purple-text btn-flat purple white-text disabled" href="http://panel.clover.aydie.me/">OPEN APP</a></li>
         </ul>
@@ -138,35 +139,10 @@
   </div>
 
   <!-- Scripts -->
+  <script src="js/main.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/bodymovin.js"></script>
   <script src="js/index.js"></script>
-  <script src="js/main.js"></script>
-  <script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      }
-  </script>
-  
-  <script>
-      function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-          console.log('User signed out.');
-        });
-      }
-  </script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('.modal').modal({
-    dismissible: false,
+    dismissible: true,
     startingTop: '0%',
     endingTop: '15%',
   });
